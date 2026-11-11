@@ -1,0 +1,5 @@
+model,test_accuracy,test_f1,cv_accuracy,cv_f1
+"Baseline (Dummy, most_frequent)",0.554,0.0,0.563,0.0
+Logistic Regression,0.75,0.72,0.822,0.797
+Random Forest,0.75,0.696,0.795,0.774
+Gradient Boosting,0.768,0.723,0.8,0.778

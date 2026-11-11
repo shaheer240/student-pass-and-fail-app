@@ -1,0 +1,90 @@
+{
+  "best_model": "Logistic Regression",
+  "selection_rule": "highest 5-fold CV F1 on training data only",
+  "sklearn_version": "1.9.1",
+  "n_train": 224,
+  "n_test": 56,
+  "features": [
+    "hours_studied",
+    "attendance",
+    "practice_tests",
+    "sleep_hours",
+    "study_method"
+  ],
+  "excluded": [
+    "final_score (target leakage)"
+  ],
+  "results": [
+    {
+      "model": "Baseline (Dummy, most_frequent)",
+      "test_accuracy": 0.554,
+      "test_f1": 0.0,
+      "cv_accuracy": 0.563,
+      "cv_f1": 0.0
+    },
+    {
+      "model": "Logistic Regression",
+      "test_accuracy": 0.75,
+      "test_f1": 0.72,
+      "cv_accuracy": 0.822,
+      "cv_f1": 0.797
+    },
+    {
+      "model": "Random Forest",
+      "test_accuracy": 0.75,
+      "test_f1": 0.696,
+      "cv_accuracy": 0.795,
+      "cv_f1": 0.774
+    },
+    {
+      "model": "Gradient Boosting",
+      "test_accuracy": 0.768,
+      "test_f1": 0.723,
+      "cv_accuracy": 0.8,
+      "cv_f1": 0.778
+    }
+  ],
+  "confusion_matrices": {
+    "Baseline (Dummy, most_frequent)": [
+      [
+        31,
+        0
+      ],
+      [
+        25,
+        0
+      ]
+    ],
+    "Logistic Regression": [
+      [
+        24,
+        7
+      ],
+      [
+        7,
+        18
+      ]
+    ],
+    "Random Forest": [
+      [
+        26,
+        5
+      ],
+      [
+        9,
+        16
+      ]
+    ],
+    "Gradient Boosting": [
+      [
+        26,
+        5
+      ],
+      [
+        8,
+        17
+      ]
+    ]
+  },
+  "n_misclassified_best": 14
+}

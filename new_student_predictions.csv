@@ -1,0 +1,9 @@
+student_id,hours_studied,attendance,practice_tests,sleep_hours,study_method,predicted_class,predicted_label,pass_probability
+N001,8.5,92,5,7.5,group,1,Pass,0.975
+N002,1.5,55,0,5.0,video,0,Fail,0.008
+N003,5.0,75,3,6.5,self,0,Fail,0.345
+N004,3.2,68,2,,video,0,Fail,0.075
+N005,9.0,88,6,8.0,self,1,Pass,0.974
+N006,2.0,95,1,7.0,group,0,Fail,0.134
+N007,6.5,60,4,5.5,video,1,Pass,0.525
+N008,4.4,80,3,6.8,group,0,Fail,0.421
