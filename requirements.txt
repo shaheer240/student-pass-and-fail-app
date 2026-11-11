@@ -1,0 +1,8 @@
+# Versions used to train/save the pipeline (joblib files are sklearn-version sensitive)
+scikit-learn==1.9.1
+pandas>=2.0
+numpy
+joblib
+matplotlib
+streamlit>=1.30
+jupyter
